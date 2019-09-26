@@ -57,3 +57,80 @@ html, body {
     height: 100%;
 }
 
+@1header-font: 2em;
+@2header-font: 1.2em;
+@text-spacing:{
+	margin:.5%;
+	padding:.5%;
+}
+@box-spacing:{
+	margin:3vw;
+	padding:2vw;
+}
+@flex-container:{
+	display:flex;
+}
+
+html {
+	
+	body{
+		h1{
+			font-size: @1header-font;
+			@text-spacing();
+			
+		}
+		h2{
+			font-size: @2header-font;
+			@text-spacing();
+			
+			
+		}
+		p{
+			@text-spacing();
+		}
+		
+		.Navigation{
+			@flex-container();
+			justify-content:flex-end;
+			padding:1%;
+			width: 100%;
+			a{
+				margin:1.5em;
+			}	
+
+		
+		}	
+        .Header {
+			@flex-container();
+			flex-direction: column;
+			background-color: grey;
+			@box-spacing();
+			
+			
+			button{
+				@text-spacing();
+				width:10%;
+
+			}
+			
+		}
+		.First-Section{
+			@flex-container();
+			@box-spacing();
+			.First{
+				width:50%;
+				
+			}
+			.Second{
+				width:50%;
+			}
+		}
+		.Second-Section{
+			@flex-container();
+			@box-spacing();
+			flex-direction: column;
+		}
+		
+	}
+}
+
