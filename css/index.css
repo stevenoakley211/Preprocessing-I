@@ -134,6 +134,12 @@ html,
 body {
   height: 100%;
 }
+@media (max-width: 500px) {
+  .Navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 html body h1 {
   font-size: 2em;
   margin: 0.5%;
