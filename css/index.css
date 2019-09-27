@@ -139,6 +139,13 @@ body {
     flex-direction: column;
     align-items: center;
   }
+  .First-Section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Title {
+    display: none;
+  }
 }
 html body h1 {
   font-size: 2em;
@@ -179,6 +186,7 @@ html body .First-Section {
   display: flex;
   margin: 3vw;
   padding: 2vw;
+  align-items: center;
 }
 html body .First-Section .First {
   width: 50%;
